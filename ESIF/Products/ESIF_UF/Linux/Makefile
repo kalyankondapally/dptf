@@ -42,8 +42,8 @@ CPPFLAGS += -DESIF_ATTR_USER
 CPPFLAGS += -DESIF_ATTR_DAEMON
 CPPFLAGS += -DESIF_FEAT_OPT_COMPRESS
 
-CFLAGS  += -Wno-multichar
-CFLAGS  += -Werror
+CFLAGS += -Wno-multichar -Wno-format-truncation
+#CFLAGS  += -Werror
 
 # Compile Flags added for security purposes
 CFLAGS  += -fPIE
